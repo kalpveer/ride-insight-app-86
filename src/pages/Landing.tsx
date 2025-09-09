@@ -1,37 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { MapPin, Zap, Shield } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-surface flex items-center justify-center p-4">
+    <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="max-w-4xl w-full">
-        <div className="text-center mb-12">
-          <div className="mb-6">
-            <div className="w-20 h-20 mx-auto bg-gradient-primary rounded-full flex items-center justify-center shadow-glow">
-              <MapPin className="w-10 h-10 text-primary-foreground" />
-            </div>
-          </div>
-          <h1 className="text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+        <div className="text-center mb-16">
+          <h1 className="text-6xl font-semibold mb-6 text-foreground tracking-tight">
             Cirkle
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
             Smart transit tracking platform connecting travelers, drivers, and authorities in real-time
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          <Card className="p-6 bg-card shadow-card hover:shadow-glow transition-all duration-300 group cursor-pointer"
+        <div className="grid md:grid-cols-3 gap-8">
+          <Card className="p-8 bg-card border border-border hover:border-primary/20 transition-all duration-200 cursor-pointer"
                 onClick={() => navigate('/traveler/city-select')}>
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                <MapPin className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">I'm a Traveler</h3>
-              <p className="text-muted-foreground mb-4">
+              <h3 className="text-2xl font-medium mb-3 text-foreground">Traveler</h3>
+              <p className="text-muted-foreground mb-6 font-light leading-relaxed">
                 Track buses, trains, and metro in real-time. Plan your routes efficiently.
               </p>
               <Button className="w-full" variant="outline">
@@ -40,14 +31,11 @@ const Landing = () => {
             </div>
           </Card>
 
-          <Card className="p-6 bg-card shadow-card hover:shadow-glow transition-all duration-300 group cursor-pointer"
+          <Card className="p-8 bg-card border border-border hover:border-primary/20 transition-all duration-200 cursor-pointer"
                 onClick={() => navigate('/driver/profile-setup')}>
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-bus/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-bus/20 transition-colors">
-                <Zap className="w-8 h-8 text-bus" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">I'm a Driver/Operator</h3>
-              <p className="text-muted-foreground mb-4">
+              <h3 className="text-2xl font-medium mb-3 text-foreground">Driver</h3>
+              <p className="text-muted-foreground mb-6 font-light leading-relaxed">
                 Update your location, manage occupancy levels, and communicate with passengers.
               </p>
               <Button className="w-full" variant="outline">
@@ -56,14 +44,11 @@ const Landing = () => {
             </div>
           </Card>
 
-          <Card className="p-6 bg-card shadow-card hover:shadow-glow transition-all duration-300 group cursor-pointer"
+          <Card className="p-8 bg-card border border-border hover:border-primary/20 transition-all duration-200 cursor-pointer"
                 onClick={() => navigate('/authority/login')}>
             <div className="text-center">
-              <div className="w-16 h-16 mx-auto bg-train/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-train/20 transition-colors">
-                <Shield className="w-8 h-8 text-train" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Authority Dashboard</h3>
-              <p className="text-muted-foreground mb-4">
+              <h3 className="text-2xl font-medium mb-3 text-foreground">Authority</h3>
+              <p className="text-muted-foreground mb-6 font-light leading-relaxed">
                 Monitor fleet status, analyze traffic patterns, and generate reports.
               </p>
               <Button className="w-full" variant="outline">
@@ -73,24 +58,15 @@ const Landing = () => {
           </Card>
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="flex justify-center space-x-8 text-sm text-muted-foreground">
-            <div className="flex items-center">
-              <div className="w-3 h-3 bg-bus rounded-full mr-2"></div>
-              Bus
-            </div>
-            <div className="flex items-center">
-              <div className="w-3 h-3 bg-metro rounded-full mr-2"></div>
-              Metro
-            </div>
-            <div className="flex items-center">
-              <div className="w-3 h-3 bg-train rounded-full mr-2"></div>
-              Train
-            </div>
-            <div className="flex items-center">
-              <div className="w-3 h-3 bg-monorail rounded-full mr-2"></div>
-              Monorail
-            </div>
+        <div className="mt-16 text-center">
+          <div className="flex justify-center space-x-8 text-sm text-muted-foreground font-light">
+            <span>Bus</span>
+            <span>•</span>
+            <span>Metro</span>
+            <span>•</span>
+            <span>Train</span>
+            <span>•</span>
+            <span>Monorail</span>
           </div>
         </div>
       </div>
