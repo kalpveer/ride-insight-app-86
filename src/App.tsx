@@ -14,6 +14,7 @@ import DriverLogin from "./pages/driver/DriverLogin";
 import DriverDashboard from "./pages/driver/DriverDashboard";
 import AuthorityLogin from "./pages/authority/AuthorityLogin";
 import AuthorityDashboard from "./pages/authority/AuthorityDashboard";
+import CollegeTracker from "./pages/student/CollegeTracker";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,9 @@ const App = () => (
           {/* Authority Routes */}
           <Route path="/authority/login" element={<AuthorityLogin />} />
           <Route path="/authority/dashboard" element={<AuthorityDashboard />} />
+          
+          {/* Student Routes */}
+          <Route path="/student/college-tracker" element={<CollegeTracker />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

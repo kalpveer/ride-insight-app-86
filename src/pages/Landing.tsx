@@ -17,7 +17,7 @@ const Landing = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Card className="p-8 bg-card border border-border hover:border-primary/20 transition-all duration-200 cursor-pointer"
                 onClick={() => navigate('/traveler/city-select')}>
             <div className="text-center">
@@ -53,6 +53,19 @@ const Landing = () => {
               </p>
               <Button className="w-full" variant="outline">
                 Admin Access
+              </Button>
+            </div>
+          </Card>
+
+          <Card className="p-8 bg-card border border-border hover:border-primary/20 transition-all duration-200 cursor-pointer"
+                onClick={() => navigate('/student/college-tracker')}>
+            <div className="text-center">
+              <h3 className="text-2xl font-medium mb-3 text-foreground">Student</h3>
+              <p className="text-muted-foreground mb-6 font-light leading-relaxed">
+                Track your college or school bus in real-time and set reminders.
+              </p>
+              <Button className="w-full" variant="outline">
+                Track Bus
               </Button>
             </div>
           </Card>
