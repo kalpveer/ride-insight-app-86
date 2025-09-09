@@ -82,6 +82,10 @@ const Landing = () => {
             <span>Monorail</span>
           </div>
         </div>
+
+        <footer className="mt-20 text-center">
+          <p className="text-muted-foreground font-light">Team commanders</p>
+        </footer>
       </div>
     </div>
   );
