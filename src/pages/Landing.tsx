@@ -17,7 +17,7 @@ const Landing = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <Card className="p-8 bg-card border border-border hover:border-primary/20 transition-all duration-200 cursor-pointer"
                 onClick={() => navigate('/traveler/city-select')}>
             <div className="text-center">
