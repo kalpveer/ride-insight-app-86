@@ -19,7 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sans': ['Poppins', 'system-ui', 'sans-serif'],
+				'sans': ['Raleway', 'system-ui', 'sans-serif'],
+				'dots': ['Raleway Dots', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

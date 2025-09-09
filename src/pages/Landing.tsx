@@ -9,7 +9,7 @@ const Landing = () => {
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="max-w-4xl w-full">
         <div className="text-center mb-16">
-          <h1 className="text-6xl font-semibold mb-6 text-foreground tracking-tight">
+          <h1 className="text-6xl font-dots font-normal mb-6 text-foreground tracking-wider">
             Cirkle
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
